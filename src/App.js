@@ -8,6 +8,7 @@ import FunctionClick from './components/FunctionClick.js';
 import ParentComponent from './components/ParentComponent.js';
 import ConditionalRender from './components/ConditionalRender.js'
 import ListRender, {NameRender} from './components/ListRender.js';
+import Form from './components/Form.js';
 
 function App() {
   return (
@@ -26,8 +27,9 @@ function App() {
       {/* <FunctionClick /> */}
       {/* <ParentComponent /> */}
       {/* <ConditionalRender /> */}
-      <ListRender />
-      <NameRender />
+      {/* <ListRender />
+      <NameRender /> */}
+      <Form />
     </div>
   );
 }
