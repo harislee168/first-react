@@ -1,5 +1,5 @@
 import React from 'react'
-import Person from './Person.js'
+import Person, {Name} from './Person.js'
 
 const persons = [
   {
@@ -21,7 +21,10 @@ const persons = [
     skill: 'angular'
   }
 ]
+const names = ['Bruce', 'Clark', 'Diana', 'Hendry']
 const personList = persons.map(person => <Person key={person.id} person={person} />)
+//last resort to use the index as a key. Only work for static list if require addition and sort, this will break
+const nameList = names.map((name, id) => <Name key={id} name={name} myId={id}/>)
 const ListRender = () => {
   return (
     <div>
@@ -29,4 +32,13 @@ const ListRender = () => {
     </div>
   )
 }
+
+const NameRender = () => {
+  return (
+    <div>
+      {nameList}
+    </div>
+  )
+}
 export default ListRender
+export {NameRender}

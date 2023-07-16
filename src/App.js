@@ -7,7 +7,7 @@ import Counter from './components/Counter';
 import FunctionClick from './components/FunctionClick.js';
 import ParentComponent from './components/ParentComponent.js';
 import ConditionalRender from './components/ConditionalRender.js'
-import ListRender from './components/ListRender.js';
+import ListRender, {NameRender} from './components/ListRender.js';
 
 function App() {
   return (
@@ -27,6 +27,7 @@ function App() {
       {/* <ParentComponent /> */}
       {/* <ConditionalRender /> */}
       <ListRender />
+      <NameRender />
     </div>
   );
 }
