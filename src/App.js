@@ -18,6 +18,8 @@ import ParentClassInput from './components/Basic/Ref/ParentClassInput';
 import PortalDemo from './components/Basic/PortalDemo';
 import Hero from './components/Basic/Hero';
 import ErrorBoundary from './components/Basic/ErrorBoundary';
+import ClickCounter from './components/Basic/HigherOrderComponent/ClickCounter';
+import HoverCounter from './components/Basic/HigherOrderComponent/HoverCounter';
 
 
 function App() {
@@ -48,12 +50,14 @@ function App() {
         {/* <ParentClassInput /> */}
         {/* <ParentFuncInput /> */}
         {/* <PortalDemo /> */}
-        <ErrorBoundary>
+        {/* <ErrorBoundary>
           <Hero name='Batman' />
         </ErrorBoundary>
         <ErrorBoundary>
           <Hero name='Joker' />
-        </ErrorBoundary>
+        </ErrorBoundary> */}
+        <ClickCounter name='Hendry'/>
+        <HoverCounter />
       </div>
     </div>
   );
