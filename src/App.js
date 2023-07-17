@@ -9,6 +9,7 @@ import ParentComponent from './components/ParentComponent.js';
 import ConditionalRender from './components/ConditionalRender.js'
 import ListRender, {NameRender} from './components/ListRender.js';
 import Form from './components/Form.js';
+import LifecycleA from './components/LifecycleA.js';
 
 function App() {
   return (
@@ -29,7 +30,8 @@ function App() {
       {/* <ConditionalRender /> */}
       {/* <ListRender />
       <NameRender /> */}
-      <Form />
+      {/* <Form /> */}
+      <LifecycleA />
     </div>
   );
 }
