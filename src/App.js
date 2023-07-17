@@ -26,6 +26,8 @@ import User from './components/Basic/RenderProps/User';
 import CounterTwo from './components/Basic/RenderProps/CounterTwo';
 import ComponentC from './components/Basic/Context/ComponentC';
 import { UserProvider } from './components/Basic/Context/UserContext';
+import GetList from './components/Basic/HTTP/GetList';
+import PostForm from './components/Basic/HTTP/PostForm';
 
 
 function App() {
@@ -69,10 +71,11 @@ function App() {
         <User name={(isLoggedIn) => {return isLoggedIn? 'Jack':'Collin'}}/> */}
         {/* <CounterTwo render={(count, increaseCount) => { return (<ClickCounterTwo count={count} increaseCount={increaseCount} />)}} />
         <CounterTwo render={(count, increaseCount) => { return (<HoverCounterTwo count={count} increaseCount={increaseCount} />)}} /> */}
-        <UserProvider value='Bruce'>
+        {/* <UserProvider value='Bruce'>
           <ComponentC />
-        </UserProvider>
-
+        </UserProvider> */}
+        {/* <GetList /> */}
+        <PostForm />
       </div>
     </div>
   );
