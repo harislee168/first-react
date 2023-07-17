@@ -15,6 +15,9 @@ import ParComp from './components/Basic/PureComponent/ParComp.js'
 import RefsDemo from './components/Basic/Ref/RefsDemo.js';
 import ParentFuncInput from './components/Basic/Ref/ParentFuncInput';
 import ParentClassInput from './components/Basic/Ref/ParentClassInput';
+import PortalDemo from './components/Basic/PortalDemo';
+import Hero from './components/Basic/Hero';
+import ErrorBoundary from './components/Basic/ErrorBoundary';
 
 
 function App() {
@@ -42,8 +45,15 @@ function App() {
         {/* <FragmentDemo /> */}
         {/* <ParComp /> */}
         {/* <RefsDemo /> */}
-        <ParentClassInput />
+        {/* <ParentClassInput /> */}
         {/* <ParentFuncInput /> */}
+        {/* <PortalDemo /> */}
+        <ErrorBoundary>
+          <Hero name='Batman' />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero name='Joker' />
+        </ErrorBoundary>
       </div>
     </div>
   );
