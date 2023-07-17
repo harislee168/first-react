@@ -12,6 +12,9 @@ import Form from './components/Basic/Form.js';
 import LifecycleA from './components/Basic/LifecycleA.js';
 import FragmentDemo from './components/Basic/FragmentDemo.js';
 import ParComp from './components/Basic/PureComponent/ParComp.js'
+import RefsDemo from './components/Basic/Ref/RefsDemo.js';
+import ParentFuncInput from './components/Basic/Ref/ParentFuncInput';
+import ParentClassInput from './components/Basic/Ref/ParentClassInput';
 
 
 function App() {
@@ -37,7 +40,10 @@ function App() {
         {/* <Form /> */}
         {/* <LifecycleA /> */}
         {/* <FragmentDemo /> */}
-        <ParComp />
+        {/* <ParComp /> */}
+        {/* <RefsDemo /> */}
+        <ParentClassInput />
+        {/* <ParentFuncInput /> */}
       </div>
     </div>
   );
